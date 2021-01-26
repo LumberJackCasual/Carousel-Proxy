@@ -4,6 +4,7 @@
   "description": "carousel proxy for FEC",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1"
   },
   "devDependencies": {},
