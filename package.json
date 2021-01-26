@@ -1,0 +1,24 @@
+{
+  "name": "carousel-proxy",
+  "version": "1.0.0",
+  "description": "carousel proxy for FEC",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LumberJackCasual/Carousel-Proxy.git"
+  },
+  "author": "Justin Chow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LumberJackCasual/Carousel-Proxy/issues"
+  },
+  "homepage": "https://github.com/LumberJackCasual/Carousel-Proxy#readme"
+}
