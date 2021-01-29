@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const axios = require('axios');
+const morgan = require('morgan');
 const PORT = 3000;
 
 const pictures = 'http://3.92.211.44:3004';
@@ -10,10 +11,7 @@ const carousel = 'http://52.12.128.214:3002';
 
 app.use(express.static(path.resolve('public')));
 
-app.use((req, res, next) => {
-  console.log(`Carousel Proxy serving ${req.method} from ${req.path}`);
-  next();
-});
+app.use(morgan('dev'));
 
 app.get('/api/picture-service/:id', (req, res) => {
   axios.get(`${pictures}${req.url}`)
