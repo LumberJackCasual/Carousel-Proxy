@@ -4,7 +4,6 @@ const path = require('path');
 const axios = require('axios');
 const PORT = 3000;
 const reviews = 'http://localhost:3003';
-let productId;
 
 app.use(express.static(path.resolve('public')));
 
