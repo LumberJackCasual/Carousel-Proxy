@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const axios = require('axios');
 const PORT = 3000;
-const reviews = 'http://localhost:3003';
+const reviews = 'http://3.141.11.83:3003';
 
 app.use(express.static(path.resolve('public')));
 
@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/api/picture-service/:id', (req, res) => {
-  axios.get(`http://localhost:3004${req.url}`)
+  axios.get(`http://54.224.216.171:3004${req.url}`)
     .then(response => {res.send(response.data)})
     .catch(err => res.send(err));
 });
@@ -43,7 +43,7 @@ app.patch('/api/reviews/:product_id/:id', (req, res) => {
 })
 
 app.get(`/api/carousels/:id`, (req, res) => {
-  axios.get(`http://localhost:3002${req.url}`)
+  axios.get(`http://35.166.39.161:3002${req.url}`)
     .then(response => {res.send(response.data)})
     .catch(err => res.send(err));
 });
