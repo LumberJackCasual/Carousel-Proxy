@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+}
+header {
+  background-image: url('understock_header_final.png');
+  width: auto;
+  height: 153px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: top;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin: 0px auto 20px auto;
+}
+footer {
+  background-image: url('understock_footer_final.png');
+  background-color: rgb(47 51 55);
+  width: auto;
+  height: 623px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: bottom;
+  margin: 10px auto 0px auto;
+}
